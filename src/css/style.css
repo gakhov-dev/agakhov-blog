@@ -1,0 +1,143 @@
+@font-face {
+  font-family: "IrinaSerif";
+  /* src: url("../font/inria_serif/InriaSerif-Regular.ttf") format("truetype"); */
+  src: url("../font/inria_serif/InriaSerif-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "CreatoDisplay";
+  src: url("../font/creato_display/CreatoDisplay-Light.otf") format("opentype");
+}
+@font-face {
+  font-family: "CreatoDisplay";
+  src: url("../font/creato_display/CreatoDisplay-Regular.otf")
+    format("opentype");
+  font-weight: 600;
+}
+
+:root {
+  box-sizing: border-box;
+  font-size: calc(1vw + 0.6em);
+
+  --clr-normal: rgb(36, 35, 35);
+  --clr-link: #373f78;
+  --clr-link-visited: #373f78;
+  --clr-link-active: #9293ca;
+  --clr-link-hover: #9293ca;
+
+  --clr-area-title: #b3b3c8;
+  --clr-footer: #cbcbe2;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "CreatoDisplay", Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+}
+
+a:link {
+  color: var(--clr-link);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:visited {
+  color: var(--clr-link-visited);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--clr-link-hover);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:active {
+  --color: var(--clr-link-active);
+  text-decoration: underline;
+}
+
+/* body * + * {
+  margin-top: 1.5em;
+} */
+
+h1,
+h2,
+h3 {
+  font-family: "IrinaSerif", Georgia, "Times New Roman", Times, serif;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-size: 2.3rem;
+}
+
+h2 {
+  display: block;
+  margin-bottom: 1em;
+  border-bottom: var(--clr-area-title) solid 1px;
+  padding-bottom: 0.3em;
+
+  font-size: 1.8rem;
+  color: var(--clr-area-title);
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+.container {
+  margin: 1em auto;
+  max-width: 800px;
+  padding: 1em 2em;
+}
+
+img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+header {
+  display: flex;
+  --flex-wrap: wrap;
+  gap: 3em;
+  margin-bottom: 3em;
+}
+
+.photo {
+  flex-shrink: 0;
+  flex-grow: 1;
+  flex-basis: 20vw;
+}
+
+.info {
+  flex-basis: 80vw;
+}
+
+.category {
+  margin-bottom: 3rem;
+}
+
+ul > li {
+  --color: orange;
+  margin-bottom: 1em;
+}
+
+ul li ul li {
+  --color: green;
+  margin-top: 0.8em;
+}
+
+footer {
+  color: var(--clr-footer);
+  font-size: 0.7rem;
+  --background-color: var(--clr-footer);
+  border-top: var(--clr-area-title) solid 0.5px;
+  padding: 1em;
+  margin-top: 4rem;
+}
