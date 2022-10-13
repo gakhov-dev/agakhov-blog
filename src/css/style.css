@@ -126,8 +126,15 @@ header {
 .area {
   margin-bottom: 2rem;
 }
+
 p {
   line-height: 1.5;
+}
+
+p + p::first-letter {
+  font-style: normal;
+  font-weight: 100;
+  color: red;
 }
 
 ul > li {
