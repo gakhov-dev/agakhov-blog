@@ -62,10 +62,6 @@ a:active {
   text-decoration: underline;
 }
 
-/* body * + * {
-  margin-top: 1.5em;
-} */
-
 h1,
 h2,
 h3 {
@@ -104,7 +100,6 @@ img {
 
 header {
   display: flex;
-  --flex-wrap: wrap;
   gap: 3em;
   margin-bottom: 3em;
 }
@@ -131,26 +126,22 @@ p {
   line-height: 1.5;
 }
 
-p + p::first-letter {
+header p::first-letter {
   font-style: normal;
   font-weight: 100;
-  color: red;
 }
 
 ul > li {
-  --color: orange;
   margin-bottom: 1em;
 }
 
 ul li ul li {
-  --color: green;
   margin-top: 0.8em;
 }
 
 footer {
   color: var(--clr-footer);
   font-size: 0.7rem;
-  --background-color: var(--clr-footer);
   border-top: var(--clr-area-title) solid 0.5px;
   padding: 1em;
   margin-top: 4rem;
