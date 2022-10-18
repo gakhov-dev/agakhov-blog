@@ -5,7 +5,20 @@ date: 2022-10-12
 tags: ["post", "css", "project"]
 image: /img/crypto-safe1.jpg
 imageAlt: This is a test
-description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat, nam similique vitae delectus ad magni vel quo maxime, magnam placeat. Reprehenderit, distinctio aliquam?
+description: Small nice web project.
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus commodo viverra maecenas accumsan lacus vel. Donec ultrices tincidunt arcu non sodales. Mattis rhoncus urna neque viverra justo nec ultrices dui sapien. Pretium quam vulputate dignissim suspendisse in est. Lobortis mattis aliquam faucibus purus in massa tempor nec. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue. Quis ipsum suspendisse ultrices gravida dictum fusce ut placerat. Vulputate eu scelerisque felis imperdiet proin. Nisl nisi scelerisque eu ultrices.
+Print screen
+link
+
+Description.
+
+Use the CRYPTOsafe to replace the combination lock or cryptex in the quest. Write a code and a secret message, create a link and send it to the quest participants along with the tasks. Your message will be read if you enter the correct code.
+
+Design.
+Quick design in Figma. Using open source fonts Unbounded.
+Responsive css with fluid font-size depending from screen width.
+
+Technogoly.
+Interatcion with https://rebrandly.com/ short URLs service.
+This project is Serverless.
