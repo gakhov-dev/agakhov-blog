@@ -531,6 +531,10 @@ a.trial-button {
   a.trial-button {
     width: auto;
   }
+  div.copyright {
+    margin: 0 auto;
+    width: 80%;
+  }
 }
 
 .footer-nav {
@@ -575,7 +579,7 @@ a.trial-button {
 
 .copyright {
   margin: 0 auto;
-  width: 80%;
+  width: 90%;
   color: #949597;
   font-size: 0.8rem;
 }
