@@ -5,43 +5,114 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/normalize.css" />
+
+    <source src="href="js/nav.js"">
     <link rel="stylesheet" href="css/style.css" />
     <title>Document</title>
   </head>
+
   <body>
-    <header>
-      <menu>
-        <img src="" alt="logo" />
-        <ul>
-          <li><a href="#">Abstract</a></li>
-          <li><a href="#">Help Center</a></li>
-        </ul>
-      </menu>
-      <div class="service">
-        <div class="service-search"></div>
-        <div class="service-actions"></div>
+    <header class="page-heade">
+      <nav class="page-nav hide">
+        <a class="logo-link header-icon" href="#"
+          ><img class="logo-img" src="asset/hippo-solid.svg" alt="" />
+          Abstract</a
+        ><span>|</span><a href="#">Help Center</a>
+      </nav>
+
+      <div class="service hide">
+        <img
+          class="service-icon service-search"
+          src="asset/magnifying-glass-solid.svg"
+        />
+        <img class="service-icon service-actions" src="asset/bars-solid.svg" />
+      </div>
+
+      <div class="search-widjet--open">
+        <input class="search-input" type="search" placeholder="Search" />
+
+        <div class="close-img-container">
+          <img class="search-close-icon" src="asset/xmark-solid.svg" />
+        </div>
       </div>
     </header>
-    <div class="hero">
+
+    <section class="hero">
       <h1>How can we help?</h1>
       <input class="input_field" />
-    </div>
+      <div class="form-item"></div>
+    </section>
 
     <main>
       <section>
-        <img src="" alt="" />
-        <div class="coll">
-          <h2>Using Abstract</h2>
-          <p>
-            Abstract lets you manage, version, and document your designs in one
-            place.
-          </p>
-          <a href="">Learn More</a>
-        </div>
+        <img src="asset/hippo-solid.svg" alt="" height="32px" />
+        <img src="asset/arrow-right-solid.svg" alt="" height="32px" />
+
+        <h2>Using Abstract</h2>
+        <p>
+          Abstract lets you manage, version, and document your designs in one
+          place.
+        </p>
+        <a href="">Learn More</a>
+      </section>
+      <section>
+        <box-icon type="solid" name="castle"></box-icon>
+        <h2>Using Abstract</h2>
+        <p>
+          Abstract lets you manage, version, and document your designs in one
+          place.
+        </p>
+        <a href="">Learn More</a>
+      </section>
+      <section>
+        <box-icon type="solid" name="castle"></box-icon>
+        <h2>Using Abstract</h2>
+        <p>
+          Abstract lets you manage, version, and document your designs in one
+          place.
+        </p>
+        <a href="">Learn More</a>
+      </section>
+      <section>
+        <box-icon type="solid" name="castle"></box-icon>
+        <h2>Using Abstract</h2>
+        <p>
+          Abstract lets you manage, version, and document your designs in one
+          place.
+        </p>
+        <a href="">Learn More</a>
+      </section>
+      <section>
+        <box-icon type="solid" name="castle"></box-icon>
+        <h2>Using Abstract</h2>
+        <p>
+          Abstract lets you manage, version, and document your designs in one
+          place.
+        </p>
+        <a href="">Learn More</a>
+      </section>
+      <section>
+        <box-icon type="solid" name="castle"></box-icon>
+        <h2>Using Abstract</h2>
+        <p>
+          Abstract lets you manage, version, and document your designs in one
+          place.
+        </p>
+        <a href="">Learn More</a>
       </section>
     </main>
-    <footer>
-      <nav class="footer-nav">
+
+    <footer class="page-footer">
+      <div class="footer-nav">
+        <section class="footer-nav-category">
+          <h4>Category</h4>
+          <ul>
+            <li><a href="">Item-1</a></li>
+            <li><a href="">Item-2</a></li>
+            <li><a href="">Item-3</a></li>
+            <li><a href="">Item-4</a></li>
+          </ul>
+        </section>
         <div class="footer-nav-category">
           <h4>Category</h4>
           <ul>
@@ -69,17 +140,21 @@
             <li><a href="">Item-4</a></li>
           </ul>
         </div>
-        <div class="footer-nav-category">
+        <div class="footer-contact">
           <h4>Category</h4>
-          <ul>
-            <li><a href="">Item-1</a></li>
-            <li><a href="">Item-2</a></li>
-            <li><a href="">Item-3</a></li>
-            <li><a href="">Item-4</a></li>
-          </ul>
+          <a href="#">info@abstact.com</a>
         </div>
-      </nav>
-      <div class="copyright"></div>
+      </div>
+
+      <div class="copyright">
+        <img src="" alt="logo" />
+        <p>@Copyright 2022</p>
+        <p>Abstract Studio Design, Inc</p>
+        <p>All right reserved</p>
+      </div>
+
+      <button>Help</button>
+      <div class="helpe-widjet"></div>
     </footer>
   </body>
 </html>
