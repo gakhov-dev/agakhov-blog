@@ -6,29 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/normalize.css" />
 
-    <source src="href="js/nav.js"">
     <link rel="stylesheet" href="css/style.css" />
+
     <title>Document</title>
   </head>
 
   <body>
-    <header class="page-heade">
-      <nav class="page-nav hide">
+    <header class="page-header" id="page-header">
+      <nav class="page-nav" id="page-nav">
         <a class="logo-link header-icon" href="#"
           ><img class="logo-img" src="asset/hippo-solid.svg" alt="" />
           Abstract</a
         ><span>|</span><a href="#">Help Center</a>
       </nav>
 
-      <div class="service hide">
+      <div class="service" id="service">
         <img
           class="service-icon service-search"
+          id="service-search-btn"
           src="asset/magnifying-glass-solid.svg"
         />
-        <img class="service-icon service-actions" src="asset/bars-solid.svg" />
+        <img
+          class="service-icon service-actions"
+          id="service-action-btn"
+          src="asset/bars-solid.svg"
+        />
       </div>
 
-      <div class="search-widjet--open">
+      <div class="search-widjet hide" id="search-widjet">
         <input class="search-input" type="search" placeholder="Search" />
 
         <div class="close-img-container">
@@ -156,5 +161,6 @@
       <button>Help</button>
       <div class="helpe-widjet"></div>
     </footer>
+    <script src="js/nav.js"></script>
   </body>
 </html>
