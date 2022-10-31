@@ -8,6 +8,7 @@ public
 # secrets and errors
 .env
 .log
+.zip
 
 # macOS related files
 .DS_Store
