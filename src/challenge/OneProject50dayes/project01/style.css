@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Muli", sans-serif;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  width: 90vw;
+  --max-width: 1280px;
+  --margin: 0 auto;
+}
+
+.panel {
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  --min-height: 100px;
+  height: 80vh;
+  border-radius: 50px;
+  color: aliceblue;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 0.5rem;
+  position: relative;
+  transition: flex 0.7s ease-in;
+}
+
+.check-box {
+  width: 100%;
+  height: 100%;
+}
+
+.panel h1 {
+  font-size: 2rem;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+  transition: opacity 0.7s ease-in 0.4s;
+}
+
+.panel.active {
+  flex: 5;
+}
+.panel.active h1 {
+  opacity: 1;
+  --transition: opacity 0.7s ease-in 0.4s;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 100vw;
+  }
+
+  .panel:last-child,
+  .panel:nth-child(6) {
+    display: none;
+  }
+}
+
+.bg_img1 {
+  width: 100%;
+
+  background-image: url("asset/pexels-lumn-167699.jpg");
+
+  --background-size: cover;
+}
