@@ -1,0 +1,78 @@
+@font-face {
+  font-family: "GT America Standard";
+  src: url("../asset/FontsFree-Net-GT-America-Regular.ttf") format("truetype");
+}
+
+body {
+  font-family: "GT America Standard", sans-serif;
+  font-size: 1.5rem;
+}
+
+a,
+input,
+button,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+main {
+  max-width: 1000px;
+  margin-top: 10px;
+  margin-inline: auto;
+  background-color: black;
+  --display: flex;
+  --flex-direction: column;
+  --align-items: flex-start;
+  --justify-items: start;
+}
+
+.imageboard {
+  margin: 0;
+  padding: 0;
+  color: #999;
+  width: 100%;
+  height: 1000px;
+  height: 1000px;
+  background-color: aliceblue;
+  display: flex;
+  flex-basis: auto;
+  justify-items: center;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+}
+
+.rect {
+  background-color: hsla(0, 0%, 92%, 0.221);
+  border: black solid 1px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  height: 10px;
+  width: 10px;
+}
+
+.imageboard-text {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.anotation {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.anotation-text {
+  font-size: 0.8rem;
+  width: auto;
+  height: 100vh;
+}
