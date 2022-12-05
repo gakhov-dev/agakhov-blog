@@ -12,6 +12,9 @@ const rect_template = document.querySelector(".rect");
 let img_width = 1000;
 let img_height = 563;
 
+let naturalHeight;
+let naturalWidth;
+
 drawBtn.addEventListener("click", (e) => {
   e.preventDefault();
 
