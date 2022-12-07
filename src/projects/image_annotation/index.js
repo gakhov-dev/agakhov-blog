@@ -91,8 +91,8 @@ handleFiles = (files) => {
 
     //Validate the File Height and Width.
     image.onload = function () {
-      naturalHeight = this.height;
       naturalWidth = this.width;
+      naturalHeight = this.height;
       //   if (height > 100 || width > 100) {
       //     alert("Height and Width must not exceed 100px.");
       //     return false;
@@ -115,7 +115,9 @@ function addToCanvas(image) {
   clearStage();
   let sprite = PIXI.Sprite.from(image);
   img_width = PIXI_CANVAS_WIDTH;
-  img_height = img_height * (PIXI_CANVAS_WIDTH / img_width);
+  img_height = naturalHeight * (PIXI_CANVAS_WIDTH / naturalWidth);
+
+  alert(`img_width ${img_width} : ${img_height} `);
   sprite.width = img_width;
   sprite.height = img_height;
 
